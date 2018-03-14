@@ -1,7 +1,9 @@
 # WeatherGetbot
 
 This Telegram bot works on WebHooks and shows information about location: weather description and temperature.
+Default language: Russian.
 You can try it: [@WeatherGetbot](https://t.me/WeatherGetbot)
+See PHP version [here](https://github.com/igor-pgmt/Weather2Getbot).
 
 ### How to interact with bot
 Just send to him your location (tap on the attachment button and choose Location).
@@ -16,6 +18,10 @@ openssl req -newkey rsa:2048 -sha256 -nodes -keyout YOURPRIVATE.key -x509 -days 
   - Set WebHook with your pubic certificate and Telegram bot's API
 ```sh
 curl -F "url=https://YOURDOMAIN.COM:8443/weatherInfo" -F "certificate=@YOURPUBLIC.pem" "https://api.telegram.org/botXXXXXXXXX:AAAAAAAAAAAAAAAAAAAAAAAA/setwebhook"
+```
+  - Get files from github:
+```sh
+git clone https://github.com/igor-pgmt/WeatherGetbot.git
 ```
   - Specify some parameters in the code:
 **main.go:** specify your certificates
