@@ -8,7 +8,7 @@ Just send to him your location (tap on the attachment button and choose Location
 
 ### How to install it on your server
   - [Create Your bot](https://core.telegram.org/bots#6-botfather) with [@Botfather](https://t.me/BotFather)
-  - Register on the [openweathermap.org](https://home.openweathermap.org/users/sign_up) ang get your API key [here](https://home.openweathermap.org/api_keys).
+  - Register account on the [openweathermap.org](https://home.openweathermap.org/users/sign_up) ang get your API key [here](https://home.openweathermap.org/api_keys).
   - Generate certificate pair with FQDN name (or ip) of your server. You can [use self-signed certificates](https://core.telegram.org/bots/self-signed):
 ```sh
 openssl req -newkey rsa:2048 -sha256 -nodes -keyout YOURPRIVATE.key -x509 -days 365 -out YOURPUBLIC.pem -subj "/C=RU/ST=MSC/L=Moscow/O=No/CN=YOURDOMAIN.COM"
@@ -42,7 +42,7 @@ Also you can change Bot's answers language:
 ```go
     lang    = "ru"     // en, ru, etc.
 ```
-  - Then just built and run it:
+  - Then just build and run it:
 ```bash
 cd WeatherGetbot
 go build WeatherGetbot
@@ -50,5 +50,7 @@ sudo ./WeatherGetbot
 ```
 
 #### More information
+
 [Telegram's API](https://core.telegram.org/bots/api)
+
 [OpenWeatherMap's API](https://openweathermap.org/current)
