@@ -3,6 +3,7 @@
 This Telegram bot works on WebHooks and shows information about location: weather description and temperature.
 Default language: Russian.
 You can try it: [@WeatherGetbot](https://t.me/WeatherGetbot)
+
 See PHP version [here](https://github.com/igor-pgmt/Weather2Getbot).
 
 ### How to interact with bot
